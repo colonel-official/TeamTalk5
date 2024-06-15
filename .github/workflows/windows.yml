@@ -30,6 +30,7 @@ jobs:
             dotnetarch: x64
             qtarch: win64_msvc2019_64
             qtversion: '6.5.*'
+            qtmodules: 'qtmultimedia qtspeech'
             msystem: MINGW64
             portablearch: win64
         exlude:
@@ -50,6 +51,7 @@ jobs:
       with:
         arch: '${{ matrix.qtarch }}'
         version: '${{ matrix.qtversion }}'
+        modules: '${{ matrix.qtmodules }}'
         cache-key-prefix: 'install-qt-action'
         setup-python: 'false'
 
