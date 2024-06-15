@@ -1,9 +1,6 @@
 name: Windows
 
-on:
-  push:
-    branches-ignore:
-      - debug_workflow
+on: [push]
 
 env:
   # TeamTalk unit test environment variables
@@ -47,7 +44,7 @@ jobs:
         java-version: '11'
         architecture: ${{ matrix.dotnetarch }}
 
-    - uses: jurplel/install-qt-action@v3
+    - uses: jurplel/install-qt-action@v4
       with:
         arch: '${{ matrix.qtarch }}'
         setup-python: 'false'
