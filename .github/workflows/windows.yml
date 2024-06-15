@@ -30,7 +30,7 @@ jobs:
             dotnetarch: x64
             qtarch: win64_msvc2019_64
             qtversion: '6.5.*'
-            qtmodules: 'qtmultimedia qtspeech'
+            qtmodules: 'qtmultimedia qtspeech qtvirtualkeyboard'
             msystem: MINGW64
             portablearch: win64
         exlude:
